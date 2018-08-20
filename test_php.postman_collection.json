@@ -1,0 +1,349 @@
+{
+	"info": {
+		"name": "test_php",
+		"_postman_id": "3ff1ce32-15ea-73d4-c11f-29a9a5b927fc",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "insert_calificacion",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "$2y$11$q5MkhSBtlsJcNEVsYh64a.aCluzHnGog7TQAKVmQwO9C8xb.t89F."
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_materia",
+							"value": "1",
+							"description": "Identificador de materia",
+							"type": "text"
+						},
+						{
+							"key": "id_usuario",
+							"value": "1",
+							"description": "Identificador de usuario",
+							"type": "text"
+						},
+						{
+							"key": "calificacion",
+							"value": "9",
+							"description": "Calificacion",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/test_php/ws/insert_calificacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"test_php",
+						"ws",
+						"insert_calificacion"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "ba22e16a-66dc-4194-89e4-52687e83ae8e",
+					"name": "insert_calificacion01",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "$2y$11$q5MkhSBtlsJcNEVsYh64a.aCluzHnGog7TQAKVmQwO9C8xb.t89F.",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_materia",
+									"value": "1",
+									"description": "Identificador de materia",
+									"type": "text"
+								},
+								{
+									"key": "id_usuario",
+									"value": "1",
+									"description": "Identificador de usuario",
+									"type": "text"
+								},
+								{
+									"key": "calificacion",
+									"value": "9",
+									"description": "Calificacion",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/test_php/ws/insert_calificacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"test_php",
+								"ws",
+								"insert_calificacion"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true",
+							"name": "Access-Control-Allow-Credentials",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Content-Range, Content-Disposition, Content-Description",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, OPTIONS",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "1000",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"name": "Content-Encoding",
+							"description": "The type of encoding used on the data."
+						},
+						{
+							"key": "Content-Length",
+							"value": "89",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Aug 2018 19:06:32 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100",
+							"name": "Keep-Alive",
+							"description": "Custom header"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.25 (Unix) OpenSSL/1.0.2j PHP/5.6.30 mod_perl/2.0.8-dev Perl/v5.16.3",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding,User-Agent",
+							"name": "Vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.30",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Sat Jun 27 2020 23:08:28 GMT-0500 (CDT)",
+							"httpOnly": false,
+							"domain": "localhost",
+							"path": "/",
+							"secure": false,
+							"value": "a%3A4%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%22d9afd52fea17c0bbef2cd84dd85ef81e%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A3%3A%22%3A%3A1%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A20%3A%22PostmanRuntime%2F7.1.1%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1530245308%3B%7D8f0b5ed8411dbe470840ebd8f8ef9b98",
+							"key": "ci_session"
+						},
+						{
+							"expires": "Mon Jan 18 2038 21:14:07 GMT-0600 (CST)",
+							"httpOnly": false,
+							"domain": "localhost",
+							"path": "/",
+							"secure": false,
+							"value": "q11tk70lbg39gcsk2mktcn7rg3",
+							"key": "PHPSESSID"
+						}
+					],
+					"responseTime": 121,
+					"body": "{\"msg\":\"Calificacion registrada correctamente\",\"code\":200,\"success\":\"ok\"}"
+				}
+			]
+		},
+		{
+			"name": "get_calificaciones",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "$2y$11$q5MkhSBtlsJcNEVsYh64a.aCluzHnGog7TQAKVmQwO9C8xb.t89F."
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost/test_php/ws/get_calificaciones/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"test_php",
+						"ws",
+						"get_calificaciones",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update_calificacion",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "1d4ff499-b9ce-410f-8e99-b2fd3ff7868b",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "$2y$11$q5MkhSBtlsJcNEVsYh64a.aCluzHnGog7TQAKVmQwO9C8xb.t89F."
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id_pk_calificacion",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "calificacion",
+							"value": "10",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/test_php/ws/update_calificacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"test_php",
+						"ws",
+						"update_calificacion"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete_calificacion",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "$2y$11$q5MkhSBtlsJcNEVsYh64a.aCluzHnGog7TQAKVmQwO9C8xb.t89F."
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id_pk_calificacion",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/test_php/ws/delete_calificacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"test_php",
+						"ws",
+						"delete_calificacion"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
